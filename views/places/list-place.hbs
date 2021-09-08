@@ -1,0 +1,26 @@
+<div class='container'>
+    <div class='row'>
+        {{#each place}}
+        <div class='col-4 mb-5'>
+            <p>Establecimiento: {{name}}</p>
+            {{!-- <p>Longitud: {{location.coordinates.[0]}}</p>
+            <p>Latitud: {{location.coordinates.[1]}}</p> --}}
+            <a href='/establecimientos/detalles/{{id}}' class='btn btn-secondary'>Ver detalles del establecimiento</a>
+        </div>
+        {{/each}}
+    </div>
+    <hr>
+</div>
+
+<figure id='myMap'></figure>
+
+<a href='/' class='btn btn-dark'>Volver</a>
+
+<script src='/js/directions.js'></script>
+<script src='/js/mapStyles.js'></script>
+
+<script src='/js/basic-map-setup.js'></script>
+
+{{!-- <script src='https://unpkg.com/axios/dist/axios.min.js'></script> --}}
+
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDOuDALvzBrOz-Y-iQxy8lPZKvl8yw9ZX4&callback=initMap'></script>

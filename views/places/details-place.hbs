@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-4 mb-5">
+           <p> Establecimiento: {{name}}</p>
+            <hr>
+        
+        <p>Tipo de establecimiento: {{type}}</p>
+            <hr>
+        <form action='/establecimientos/detalles/{{id}}/borrar' method="post">
+
+            <button type="submit" class="btn btn-danger">Borrar establecimiento</button>
+
+        </form>
+        </div>
+
+    </div>
+
+
+<hr>
+
+</div>
+    <a href="/" class="btn btn-dark">Inicio</a>
