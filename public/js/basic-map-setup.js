@@ -4,18 +4,18 @@ function initMap() {
         document.querySelector('#myMap'),
         {
             zoom: 12,
-            center: directions.ironhackBCN.coords,
+            center: directions.ironhackMAD.coords,
             styles: mapStyles.silver
         }
     )
 
     new google.maps.Marker({
         map: myMap,
-        position: directions.ironhackBCN.coords,
-        title: directions.ironhackBCN.title
+        position: directions.ironhackMAD.coords,
+        title: directions.ironhackMAD.title
     })
 
-    //getPlaces(myMap)
+    getPlaces(myMap)
 }
 
 function getPlaces(map) {

@@ -1,11 +1,9 @@
 
-//Esto tengo que modificarlo bien
-
 const router = require("express").Router()
 
-const Place = require('./../models/Place.model')
+const Place = require('../models/Place-model')
 
-router.get('/map', (req, res) => {
+router.get('/places', (req, res) => {
 
     Place
         .find()
